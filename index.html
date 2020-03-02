@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>KnowYourWeather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather">
+      <div class="row">
+        <div class="col-4">
+          <form id="search-form">
+            <div class="row">
+                <div class="col-auto">
+                    <form class="form-inline" id="search-form">
+                        <label class="sr-only" for="inlineFormInputName2">Name</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                            placeholder="Enter city" />
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </div>
+            </div>
+          </form>
+          <form>
+            <button type="button" class="btn btn-primary btn-lg" id="selector-button">
+                Current city
+            </button>
+          </form>
+          <div id="h1">
+            <h1>Barreiro</h1>
+            <ul>
+              <li>
+                Monday 21:50
+              </li>
+              <li>
+                Clear
+              </li>
+            </ul>
+            <div id=temperature>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny">
+              12 ºC | ºF
+            </div>
+            <ul>
+              <li>
+                Humidity %
+              </li>
+              <li>
+                Wind Km/h
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-8">
+          <h2>KnowYourWeather</h2>
+          <br />
+          <div class="row" id="forecast">
+            <div class="col-auto">
+              <h3>
+                Mon
+              </h3>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="">
+              <div class="weather-forecast-temperature">
+                <strong>23º</strong>13º
+              </div>
+            </div>
+            <div class="col-auto">
+              <h3>
+                Tue
+              </h3>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="">
+              <div class="weather-forecast-temperature">
+                <strong>23º</strong>13º
+              </div>
+            </div>
+            <div class="col-auto">
+              <h3>
+                Wed
+              </h3>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="">
+              <div class="weather-forecast-temperature">
+                <strong>23º</strong>13º
+              </div>
+            </div>
+            <div class="col-auto">
+              <h3>
+                Thu
+              </h3>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="">
+              <div class="weather-forecast-temperature">
+                <strong>23º</strong>13º
+              </div>
+            </div>
+            <div class="col-auto">
+              <h3>
+                Fri
+              </h3>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="">
+              <div class="weather-forecast-temperature">
+                <strong>23º</strong>13º
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a href="https://github.com/Ritacer/know-your-weather" target="_blank">Open-source code</a> by Rita Cerqueira, 2020
+      </small>
+    </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
