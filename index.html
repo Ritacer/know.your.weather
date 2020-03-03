@@ -14,6 +14,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-wrapper">
       <div class="weather">
       <div class="row">
         <div class="col-5">
@@ -36,6 +37,7 @@
             </button>
           </form>
           <div id="h1">
+            <div class="overview">
             <h1>Barreiro</h1>
             <ul>
               <li>
@@ -45,9 +47,12 @@
                 Clear
               </li>
             </ul>
-            <div id=temperature>
-              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny">
+            </div>
+            <div class="clearfix" id=temperature>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="float-left">
+              <div class="float-left">
               12 ºC | ºF
+              </div>
             </div>
             <ul>
               <li>
@@ -111,6 +116,7 @@
           </div>
         </div>
       </div>
+    </div>  
       <small>
         <a href="https://github.com/Ritacer/know-your-weather" target="_blank">Open-source code</a> by Rita Cerqueira, 2020
       </small>
