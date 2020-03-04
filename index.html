@@ -9,6 +9,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>KnowYourWeather</title>
   </head>
@@ -38,20 +39,18 @@
           </form>
           <div id="h1">
             <div class="overview">
-            <h1>Barreiro</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>
                 Monday 21:50
               </li>
-              <li>
-                Clear
-              </li>
+              <li id="description"></li>
             </ul>
             </div>
             <div class="clearfix weather-temperature">
               <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="float-left">
               <div class="float-left">
-              <strong>12</strong><span class="units">ºC | <a href="#">ºF</a></span>
+              <strong id="temperature">12</strong><span class="units">ºC | <a href="#">ºF</a></span>
               </div>
             </div>
             <ul>
