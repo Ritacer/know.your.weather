@@ -1,8 +1,26 @@
+function displayPosition(position) {
+  let apiUrlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${apiKey}`;
+
+  function showCity(response) {
+    let currentCity = document.querySelector("#city");
+    currentCity.innerHTML = `${response.data.name}`;
+  }
+
+  axios.get(apiUrlCurrent).then(showCity);
+}
+
+function getCurrentPosition() {
+  navigator.geolocation.getCurrentPosition(displayPosition);
+}
+
+let button = document.querySelector("selector-button");
+addEventListener("click", getCurrentPosition);
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
-    hours = `0${hours};`;
+    hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -22,6 +40,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
