@@ -62,3 +62,28 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+.col-7 h2 {
+  font-size: 30px;
+  font-weight: 500;
+  height: 15px;
+  line-height: 15x;
+  padding-top: 8px;
+  padding-bottom: 28px;
+}
+.row h3 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+.row .weather-forecast-temperature {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 8px;
+}
