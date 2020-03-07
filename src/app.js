@@ -67,8 +67,8 @@ function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(displayPosition);
 }
 
-let button = document.querySelector("selector-button");
-addEventListener("click", getCurrentPosition);
+let button = document.querySelector("#selector-button");
+button.addEventListener("click", getCurrentPosition);
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
@@ -118,3 +118,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+search("New York");
